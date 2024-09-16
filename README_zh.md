@@ -77,6 +77,12 @@ Vertex AI 是一個用於建置、部署和擴展機器學習模型的強大工�
 ### 3. 計算 Token 使用量
 這個情境涉及使用 Vertex AI 進行額外操作以計算 Token 使用量。使用的 Token 數量代表了成本消耗，並有助於評估當前的 AI 互動是否正常運作。監控 Token 使用量是管理成本和確保 AI 高效運作的重要指標。
 
+## 範例展示
+
+![Screenshot 1](screenshots/1.png)
+![Screenshot 2](screenshots/2.png)
+![Screenshot 2](screenshots/3.png)
+
 ## 專案結構
 
 - `lib/`：包含 Flutter 應用程式的主要程式碼。

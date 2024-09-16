@@ -77,6 +77,12 @@ In addition to text prompts, users can also provide image inputs, either by taki
 ### 3. Token Usage Calculation
 This scenario involves additional operations using Vertex AI to calculate token usage. The amount of tokens used represents the cost consumption and helps evaluate whether the current AI interactions are functioning properly. Monitoring token usage is a crucial indicator for managing costs and ensuring efficient AI operations.
 
+## Screenshots
+
+![Screenshot 1](screenshots/1.png)
+![Screenshot 2](screenshots/2.png)
+![Screenshot 2](screenshots/3.png)
+
 ## Project Structure
 
 - `lib/`: Contains the main code for the Flutter application.
