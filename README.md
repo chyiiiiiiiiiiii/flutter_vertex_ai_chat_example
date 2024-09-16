@@ -1,5 +1,7 @@
 # vertex_ai_chat_example
 
+[![Chinese Version](https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87%E7%89%88-blue)](README_zh.md)
+
 A new Flutter project designed to demonstrate the integration of Vertex AI with a Flutter application. This project showcases various features and provides a solid foundation for building more complex applications.
 
 ## Introduction
