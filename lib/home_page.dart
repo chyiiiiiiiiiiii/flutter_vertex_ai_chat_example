@@ -29,7 +29,8 @@ class _HomePageState extends State<HomePage> {
         builder: (context, snapshot) {
           return switch (snapshot.connectionState) {
             ConnectionState.done => const _ChatBody(),
-            ConnectionState.none => const Text('Firebase初始化失敗'),
+            ConnectionState.none =>
+              const Text('Firebase initialization failed'),
             _ => const CircularProgressIndicator(),
           };
         },
@@ -84,7 +85,7 @@ class _ChatBodyState extends State<_ChatBody> {
 
   Future<void> _sendChatMessage(String message) async {
     if (message.isEmpty) {
-      _showMessage(message: '請輸入 Prompt');
+      _showMessage(message: 'Please enter a prompt');
 
       return;
     }
@@ -145,7 +146,7 @@ class _ChatBodyState extends State<_ChatBody> {
 
   Future<void> _sendImagePrompt(String message) async {
     if (message.isEmpty) {
-      _showMessage(message: '請輸入 Prompt');
+      _showMessage(message: 'Please enter a prompt');
 
       return;
     }
@@ -220,7 +221,7 @@ class _ChatBodyState extends State<_ChatBody> {
   Future<void> _getPromptToken() async {
     final prompt = _promptTextController.text;
     if (prompt.isEmpty) {
-      _showMessage(message: '請輸入 Prompt');
+      _showMessage(message: 'Please enter a prompt');
 
       return;
     }
@@ -234,7 +235,7 @@ class _ChatBodyState extends State<_ChatBody> {
     );
     _showMessage(
       message:
-          '消耗token: ${response.totalTokens}\n計費character: ${response.totalBillableCharacters}',
+          'Tokens used: ${response.totalTokens}\nBillable characters: ${response.totalBillableCharacters}',
     );
 
     setState(() {
@@ -250,7 +251,7 @@ class _ChatBodyState extends State<_ChatBody> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(isError ? '錯誤' : '訊息'),
+          title: Text(isError ? 'Error' : 'Message'),
           content: SingleChildScrollView(
             child: SelectableText(message),
           ),
@@ -299,7 +300,7 @@ class _ChatBodyState extends State<_ChatBody> {
                     focusNode: _textFieldFocus,
                     decoration: InputDecoration(
                       contentPadding: const EdgeInsets.all(15),
-                      hintText: '輸入 prompt...',
+                      hintText: 'Enter prompt...',
                       border: OutlineInputBorder(
                         borderRadius: const BorderRadius.all(
                           Radius.circular(14),
