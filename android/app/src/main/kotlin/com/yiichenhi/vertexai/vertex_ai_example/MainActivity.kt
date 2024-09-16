@@ -1,0 +1,5 @@
+package com.yiichenhi.vertexai
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity()
