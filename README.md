@@ -1,4 +1,4 @@
-# vertex_ai_chat_example
+# Vertex AI Chat Example
 
 [![Chinese Version](https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87%E7%89%88-blue)](README_zh.md)
 
